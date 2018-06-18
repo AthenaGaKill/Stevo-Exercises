@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input ToDo Haip</title>
+</head>
+<body>
+    <h1>To Do List Haip</h1>
+    
+    <input type="text" id="textHere" placeholder="Put your todo here brah!"></input>
+    <button onclick="myFunc()">Add ToDo</button>
+   
+
+    <h2>Overview to do list:</h2>
+    <p id="list"></p>
+
+    <script>
+        function myFunc(){
+        var inputToDo = document.getElementById("textHere").value;
+        document.getElementById("list").innerHTML += inputToDo + "<br>";
+        document.getElementById("textHere").value.reset();
+        }; 
+                 
+    </script>
+</body>
+</html>
